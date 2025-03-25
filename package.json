@@ -1,0 +1,17 @@
+{
+	"name": "extension-auto-close-tabs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/chrome": "^0.0.310",
+		"typescript": "^5.8.2"
+	}
+}
