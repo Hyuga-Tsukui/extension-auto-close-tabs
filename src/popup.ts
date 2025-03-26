@@ -1,4 +1,17 @@
-import { saveDelay } from "./delay";
+import { getDelay, saveDelay } from "./delay";
+
+// Load and display current settings when the page loads
+document.addEventListener("DOMContentLoaded", async () => {
+	const currentDelay = await getDelay();
+	const delayInput = document.getElementById("delay") as HTMLInputElement;
+	delayInput.value = currentDelay.toString();
+	
+	// Update the element that displays the current setting
+	const currentSettingElement = document.getElementById("current-setting");
+	if (currentSettingElement) {
+		currentSettingElement.textContent = `Current setting: ${currentDelay} seconds`;
+	}
+});
 
 document.getElementById("save")?.addEventListener("click", () => {
 	const delayInput = document.getElementById("delay") as HTMLInputElement;
