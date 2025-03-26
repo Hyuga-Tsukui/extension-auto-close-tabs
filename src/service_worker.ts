@@ -47,7 +47,7 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
 					`Tab ${tabId} is active, rescheduling closing in ${timeoutSeconds} seconds`,
 				);
 				return;
-			}catch (error) {
+			} catch (error) {
 				console.error("Error rescheduling tab close:", error);
 			}
 		}
@@ -66,5 +66,7 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
  */
 async function scheduleTabClose(tabId: number, timeoutSeconds: number) {
 	const alarmName = `${ALARM_PREFIX}${tabId}`;
-	await chrome.alarms.create(alarmName, { delayInMinutes: timeoutSeconds / 60 });
+	await chrome.alarms.create(alarmName, {
+		delayInMinutes: timeoutSeconds / 60,
+	});
 }

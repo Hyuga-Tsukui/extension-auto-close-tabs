@@ -16,13 +16,13 @@ document.getElementById("save")?.addEventListener("click", () => {
  * Save delay setting to storage and notify user
  */
 async function saveDelayAndNotify(seconds: number) {
-  try {
-    await saveDelay(seconds);
-    showMessage(`Close delay set to ${seconds} seconds`);
-  } catch (error) {
-    console.error("Error saving delay:", error);
-    showMessage("Failed to save settings");
-  }
+	try {
+		await saveDelay(seconds);
+		showMessage(`Close delay set to ${seconds} seconds`);
+	} catch (error) {
+		console.error("Error saving delay:", error);
+		showMessage("Failed to save settings");
+	}
 }
 
 /**
