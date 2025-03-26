@@ -1,5 +1,5 @@
 const { build } = require("esbuild");
-const { existsSync, mkdirSync } = require("fs");
+const { existsSync, mkdirSync } = require("node:fs");
 
 if (!existsSync("./dist")) {
 	mkdirSync("./dist", { recursive: true });
