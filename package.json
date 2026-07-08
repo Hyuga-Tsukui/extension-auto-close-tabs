@@ -16,6 +16,6 @@
 		"@types/chrome": "^0.0.317",
 		"archiver": "^7.0.1",
 		"esbuild": "^0.25.1",
-		"typescript": "^5.8.2"
+		"typescript": "^7.0.0"
 	}
 }
