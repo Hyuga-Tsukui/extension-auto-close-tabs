@@ -15,7 +15,7 @@
 		"@biomejs/biome": "1.9.4",
 		"@types/chrome": "^0.0.317",
 		"archiver": "^7.0.1",
-		"esbuild": "^0.25.1",
+		"esbuild": "^0.28.0",
 		"typescript": "^5.8.2"
 	}
 }
