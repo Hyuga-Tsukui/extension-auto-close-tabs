@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@types/chrome": "^0.0.317",
-		"archiver": "^7.0.1",
+		"archiver": "^8.0.0",
 		"esbuild": "^0.25.1",
 		"typescript": "^5.8.2"
 	}
